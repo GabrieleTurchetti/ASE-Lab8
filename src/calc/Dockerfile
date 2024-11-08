@@ -1,6 +1,7 @@
 FROM python:3.12-slim
 
-WORKDIR /app
+ADD . /calc
+WORKDIR /calc
 
 COPY app.py .
 COPY requirements.txt .
